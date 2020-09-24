@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+    <h1>Welcome. . .</h1>
+	<h2>Rista's Page</h2>
+	<script>
+	document.write("Hello Yorobun...!");
+    </script>
+	<p> INI RUMUS LUAS PERSEGI</p>
+	
+  Masukkan nilai panjang:<br/>
+  <input type="text" id="panjang"><br/>
+  Masukkan nilai lebar:<br/>
+  <input type="text" id="lebar"><br/>
+  Masukkan nilai tinggi:<br/>
+  <input type="text" id="tinggi"><br/>
+  <input type="button" onclick="tulis()" value="submit">
+  <p id="hasil"></p>
+  
+	<script>
+	  function tulis (){
+	    var x = document.getElementById("panjang").value;
+		var y = document.getElementById("lebar").value;
+		var t = document.getElementById("tinggi").value;
+		LuasPersegi(x,y,t);
+	  }
+	  function LuasPersegi(panjang,lebar,tinggi){
+	    var hasil = panjang * lebar * tinggi;
+		document.getElementById("hasil").innerHTML = "Hasilnya " + hasil;
+	  }
+	</script>
+  </body>
+</html>
