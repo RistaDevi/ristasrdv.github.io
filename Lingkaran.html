@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+    <h1>Welcome. . .</h1>
+	<h2>Rista's Page</h2>
+	<script>
+	document.write("Hello Yorobun...! Anyeong haseo");
+    </script>
+	<p> INI RUMUS LUAS LINGKARAN</p>
+	
+  Masukkan nilai jari2:<br/>
+  <input type="text" id="panjang"><br/>
+  <input type="button" onclick="hitung()" value="submit">
+  <p id="hasil"></p>
+  
+	<script>
+	  function hitung (){
+	    var x = document.getElementById("panjang").value;
+		LuasLingkaran(x);
+	  }
+	  function LuasLingkaran(r){
+	    var hasil = Math.PI * r * r;
+		document.getElementById('hasil').innerHTML = "Hasilnya " + hasil;
+	  }
+	</script>
+  </body>
+</html>
